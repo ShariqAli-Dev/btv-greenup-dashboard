@@ -479,4 +479,96 @@ a {
 .hiddenChart{
     display: inline
 }
+} 
+
+#unknownEnvScreen {
+    width: auto;
+    max-width: 460px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    padding: 44px 48px 38px;
+    border-radius: 10px;
+    border-top: 3px solid #006f3b;
+    box-shadow: 0 22px 60px -22px rgba(0, 47, 25, 0.38),
+                0 4px 14px -6px rgba(0, 47, 25, 0.18);
+    font-family: Helvetica, Arial, sans-serif;
+    z-index: 30;
+    animation: unknownEnvFade 480ms cubic-bezier(.2,.7,.3,1) both;
+}
+#unknownEnvScreen .leaf {
+    display: block;
+    width: 28px;
+    height: 28px;
+    margin: 0 0 22px;
+    animation: unknownEnvRise 540ms cubic-bezier(.2,.7,.3,1) both;
+}
+#unknownEnvScreen h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 30px;
+    line-height: 1.15;
+    font-weight: 600;
+    letter-spacing: -0.012em;
+    color: #006f3b;
+    margin: 0 0 16px;
+    animation: unknownEnvRise 560ms cubic-bezier(.2,.7,.3,1) 80ms both;
+}
+#unknownEnvScreen p {
+    font-size: 15px;
+    line-height: 1.55;
+    color: #3c4a40;
+    margin: 0 0 14px;
+    animation: unknownEnvRise 560ms cubic-bezier(.2,.7,.3,1) 160ms both;
+}
+#unknownEnvScreen p:last-of-type {
+    margin-bottom: 26px;
+}
+#unknownEnvScreen a {
+    color: #006f3b;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1.5px solid #8dc63f;
+    transition: color 180ms ease, border-color 180ms ease;
+}
+#unknownEnvScreen a:hover {
+    color: #8dc63f;
+    border-bottom-color: #006f3b;
+}
+#unknownEnvScreen hr {
+    border: none;
+    border-top: 1px solid rgba(0, 111, 59, 0.14);
+    margin: 0 0 14px;
+}
+#unknownEnvScreen .ref {
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 11px;
+    color: #6b7770;
+    word-break: break-all;
+    animation: unknownEnvRise 560ms cubic-bezier(.2,.7,.3,1) 240ms both;
+}
+#unknownEnvScreen .ref-label {
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: #8a958e;
+    margin-right: 8px;
+    font-weight: 600;
+}
+@keyframes unknownEnvFade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes unknownEnvRise {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 520px) {
+    #unknownEnvScreen {
+        max-width: calc(100vw - 32px);
+        padding: 32px 28px 28px;
+    }
+    #unknownEnvScreen h2 {
+        font-size: 26px;
+    }
 }

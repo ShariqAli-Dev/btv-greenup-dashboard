@@ -19,6 +19,10 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <!-- by firebase hosting: serves the firebaseConfig of whichever
+         Firebase project this page is hosted under, and calls firebase.initializeApp().
+         Lets index.js stay env-agnostic — the active project is the hosting target. -->
+    <script src="/__/firebase/init.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js'></script>
     <!-- odometer style -->
     <link rel="stylesheet" href="https://github.hubspot.com/odometer/themes/odometer-theme-minimal.css" />
@@ -37,6 +41,17 @@
 
 <body class="container" id="top">
         <div id=loadingScreen><span id="loadingText">loading</span></div>
+        <div id='unknownEnvScreen' hidden>
+            <svg class='leaf' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='#006f3b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'>
+                <path d='M12 2C7 7 5 11 5 15a7 7 0 0 0 14 0c0-4-2-8-7-13z'/>
+                <path d='M12 2v20'/>
+            </svg>
+            <h2>Something&rsquo;s not quite right.</h2>
+            <p>The Green Up Vermont dashboard couldn&rsquo;t determine which environment it should read from. This is almost always a configuration issue on our end &mdash; nothing you did.</p>
+            <p>If it doesn&rsquo;t resolve, please email <a id='unknownEnvEmail' href='mailto:nick.floersch@codeforbtv.org'>nick.floersch@codeforbtv.org</a>.</p>
+            <hr>
+            <div class='ref'><span class='ref-label'>Reference</span><span id='unknownEnvRef'></span></div>
+        </div>
         <div id='aboutScreen'><h2>
             About
         </h2>
