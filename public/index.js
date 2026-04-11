@@ -2,25 +2,23 @@
     //these are the variables that point to useful numbers
     let totalBagsDropped;
     let totalTeams;
-    let totalProfiles;
     let currentCounty;
     let currentTown;
     let level = 'state';
     
     // Initialize Firebase
     var config = {
-      apiKey: "AIzaSyAjwSCpOvLPgYcFr26V3gmfwJlGb-VtWAs",
-      authDomain: "greenupvermont-de02b.firebaseapp.com",
-      databaseURL: "https://greenupvermont-de02b.firebaseio.com",
-      projectId: "greenupvermont-de02b",
-      storageBucket: "greenupvermont-de02b.appspot.com",
-      messagingSenderId: "439621369113"
+      apiKey: "AIzaSyBUicpls4kgf0-sRbEqIJorP7Vj3CCGTSg",
+      authDomain: "greenupvermont-dev.firebaseapp.com",
+      projectId: "greenupvermont-dev",
+      storageBucket: "greenupvermont-dev.appspot.com",
+      messagingSenderId: "447874135722",
+      appId: "1:447874135722:web:09438c19ba52b4e5de42d3"
     };
-    const email = "WillyNillyLoman@gmail.com"
-    const password = "burlingtonCA"
+    const email = "dashboard-app@fakeuser.com"
+    const password = "?secretp4$$w0rd"
 
     firebase.initializeApp(config);
-    var database = firebase.database();
 
     firebase.auth().signInWithEmailAndPassword(email, password)
     .then(() =>{
