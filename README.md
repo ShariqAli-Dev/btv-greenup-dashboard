@@ -3,18 +3,6 @@
 Read-only data visualization dashboard for Green Up Day, hosted on Firebase Hosting.
 Vanilla JS + Leaflet + Chart.js + Firebase v8 compat SDK. No build step.
 
-## Environments
-
-Two Firebase projects, two hosting targets:
-
-| Alias  | Project ID             | Used for                      |
-| ------ | ---------------------- | ----------------------------- |
-| `dev`  | `greenupvermont-dev`   | Day-to-day development        |
-| `prod` | `greenupvermont-de02b` | Public-facing production site |
-
-A bare `firebase deploy` goes to dev.
-Deploying to prod always requires `--project prod`.
-
 ## Local development
 
 You can't just open `index.html` in a browser. The dashboard relies on Firebase Hosting's
@@ -26,15 +14,20 @@ will trip the unknown-environment guard and show the "Something's not quite
 right" screen instead of the dashboard.
 
 ```bash
-cd dashboard
 npx firebase serve --project dev
 # → http://localhost:5000
 ```
 
 ## Deployment
 
+Two Firebase projects, two hosting targets:
+
+| Alias  | Project ID             | Used for                      |
+| ------ | ---------------------- | ----------------------------- |
+| `dev`  | `greenupvermont-dev`   | Day-to-day development        |
+| `prod` | `greenupvermont-de02b` | Public-facing production site |
+
 ```bash
-cd dashboard
 npx firebase deploy --project dev    # points at greenupvermont-dev
 npx firebase deploy --project prod   # live site
 ```

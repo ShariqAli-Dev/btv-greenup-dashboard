@@ -1,0 +1,45 @@
+[debug] [2026-04-11T08:53:47.939Z] ----------------------------------------------------------------------
+[debug] [2026-04-11T08:53:47.943Z] Command:       /home/shariq/.nvm/versions/node/v24.12.0/bin/node /home/shariq/projects/btv/greenup/node_modules/.bin/firebase serve --project dev
+[debug] [2026-04-11T08:53:47.944Z] CLI Version:   15.14.0
+[debug] [2026-04-11T08:53:47.944Z] Platform:      linux
+[debug] [2026-04-11T08:53:47.944Z] Node Version:  v24.12.0
+[debug] [2026-04-11T08:53:47.945Z] Time:          Sat Apr 11 2026 04:53:47 GMT-0400 (Eastern Daylight Time)
+[debug] [2026-04-11T08:53:47.945Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-11T08:53:49.465Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-11T08:53:49.465Z] > authorizing via signed-in user (shariqali2195@gmail.com)
+[debug] [2026-04-11T08:53:49.465Z] [iam] checking project greenupvermont-dev for permissions ["firebase.projects.get"]
+[debug] [2026-04-11T08:53:49.466Z] Checked if tokens are valid: true, expires at: 1775898586357
+[debug] [2026-04-11T08:53:49.467Z] Checked if tokens are valid: true, expires at: 1775898586357
+[debug] [2026-04-11T08:53:49.468Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/greenupvermont-dev:testIamPermissions [none]
+[debug] [2026-04-11T08:53:49.468Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/greenupvermont-dev:testIamPermissions  x-goog-user-project=greenupvermont-dev
+[debug] [2026-04-11T08:53:49.468Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/greenupvermont-dev:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2026-04-11T08:53:49.720Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/greenupvermont-dev:testIamPermissions 200
+[debug] [2026-04-11T08:53:49.720Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/greenupvermont-dev:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2026-04-11T08:53:49.721Z] Checked if tokens are valid: true, expires at: 1775898586357
+[debug] [2026-04-11T08:53:49.721Z] Checked if tokens are valid: true, expires at: 1775898586357
+[debug] [2026-04-11T08:53:49.721Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/greenupvermont-dev [none]
+[debug] [2026-04-11T08:53:49.840Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/greenupvermont-dev 200
+[debug] [2026-04-11T08:53:49.841Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/greenupvermont-dev {"projectNumber":"447874135722","projectId":"greenupvermont-dev","lifecycleState":"ACTIVE","name":"GreenUpVermont-Dev","labels":{"firebase":"enabled"},"createTime":"2019-08-18T01:35:17.550Z"}
+[info] 
+[info] === Serving from '/home/shariq/projects/btv/greenup/dashboard'...
+[info] 
+[debug] [2026-04-11T08:53:49.848Z] Checked if tokens are valid: true, expires at: 1775898586357
+[debug] [2026-04-11T08:53:49.848Z] Checked if tokens are valid: true, expires at: 1775898586357
+[debug] [2026-04-11T08:53:49.848Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/greenupvermont-dev/sites 
+[debug] [2026-04-11T08:53:50.717Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/greenupvermont-dev/sites 200
+[debug] [2026-04-11T08:53:50.717Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/greenupvermont-dev/sites {"sites":[{"name":"projects/greenupvermont-dev/sites/greenupvermont-dev","defaultUrl":"https://greenupvermont-dev.web.app","type":"DEFAULT_SITE"},{"name":"projects/greenupvermont-dev/sites/guvtmap-dev","defaultUrl":"https://guvtmap-dev.web.app","appId":"1:447874135722:web:09438c19ba52b4e5de42d3","type":"USER_SITE"}]}
+[debug] [2026-04-11T08:53:50.718Z] Checked if tokens are valid: true, expires at: 1775898586357
+[debug] [2026-04-11T08:53:50.718Z] Checked if tokens are valid: true, expires at: 1775898586357
+[debug] [2026-04-11T08:53:50.718Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/greenupvermont-dev/webApps/-/config [none]
+[debug] [2026-04-11T08:53:51.186Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/greenupvermont-dev/webApps/-/config 200
+[debug] [2026-04-11T08:53:51.187Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/greenupvermont-dev/webApps/-/config {"projectId":"greenupvermont-dev","databaseURL":"https://greenupvermont-dev.firebaseio.com","storageBucket":"greenupvermont-dev.appspot.com","locationId":"us-central","apiKey":"AIzaSyBUicpls4kgf0-sRbEqIJorP7Vj3CCGTSg","authDomain":"greenupvermont-dev.firebaseapp.com","messagingSenderId":"447874135722","projectNumber":"447874135722","version":"2"}
+[debug] [2026-04-11T08:53:51.195Z] Checked if tokens are valid: true, expires at: 1775898586357
+[debug] [2026-04-11T08:53:51.195Z] Checked if tokens are valid: true, expires at: 1775898586357
+[debug] [2026-04-11T08:53:51.196Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/greenupvermont-dev [none]
+[debug] [2026-04-11T08:53:51.368Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/greenupvermont-dev 200
+[debug] [2026-04-11T08:53:51.368Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/greenupvermont-dev {"projectId":"greenupvermont-dev","projectNumber":"447874135722","displayName":"GreenUpVermont-Dev","name":"projects/greenupvermont-dev","resources":{"hostingSite":"greenupvermont-dev","realtimeDatabaseInstance":"greenupvermont-dev","locationId":"us-central"},"state":"ACTIVE","etag":"1_a3b9d84a-dbd0-4546-8c31-865e65ac7dc9"}
+[info] i  hosting[greenupvermont-dev]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: public"}}
+[info] ✔  hosting[greenupvermont-dev]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: http://localhost:5000"}}
+[info] i  hosting: 127.0.0.1 - - [11/Apr/2026:08:53:54 +0000] "GET / HTTP/1.1" 200 7201 "-" "curl/7.81.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [11/Apr/2026:08:53:54 +0000] \"GET / HTTP/1.1\" 200 7201 \"-\" \"curl/7.81.0\""}}
+[info] i  hosting: 127.0.0.1 - - [11/Apr/2026:08:53:54 +0000] "GET /__/firebase/init.js HTTP/1.1" 200 - "-" "curl/7.81.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [11/Apr/2026:08:53:54 +0000] \"GET /__/firebase/init.js HTTP/1.1\" 200 - \"-\" \"curl/7.81.0\""}}
