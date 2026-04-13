@@ -1,5 +1,3 @@
- 
-    //these are the variables that point to useful numbers
     let totalBagsDropped;
     let totalTeams;
     let currentCounty;
