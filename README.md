@@ -3,6 +3,14 @@
 Read-only data visualization dashboard for Green Up Day, hosted on Firebase Hosting.
 Vanilla JS + Leaflet + Chart.js + Firebase v8 compat SDK. No build step.
 
+## Setup
+
+```bash
+npm install
+```
+
+First-time setup: `npx firebase login`.
+
 ## Local development
 
 You can't just open `index.html` in a browser. The dashboard relies on Firebase Hosting's
@@ -14,7 +22,7 @@ will trip the unknown-environment guard and show the "Something's not quite
 right" screen instead of the dashboard.
 
 ```bash
-npx firebase serve --project dev
+npm run dev
 # → http://localhost:5000
 ```
 
@@ -28,11 +36,9 @@ Two Firebase projects, two hosting targets:
 | `prod` | `greenupvermont-de02b` | Public-facing production site |
 
 ```bash
-npx firebase deploy --project dev    # points at greenupvermont-dev
-npx firebase deploy --project prod   # live site
+npm run deploy          # deploys to greenupvermont-dev
+npm run deploy:prod     # deploys to production
 ```
-
-First-time setup: `npx firebase login`.
 
 ## How environment-switching works
 

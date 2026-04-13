@@ -1,0 +1,12 @@
+{
+  "name": "greenup-dashboard",
+  "private": true,
+  "scripts": {
+    "dev": "firebase serve --project dev",
+    "deploy": "firebase deploy --project dev",
+    "deploy:prod": "firebase deploy --project prod"
+  },
+  "devDependencies": {
+    "firebase-tools": "^14"
+  }
+}
